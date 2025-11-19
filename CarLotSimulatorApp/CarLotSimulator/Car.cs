@@ -15,6 +15,16 @@ public class Car
 
 
 
+    public Car(int year, string make, string model, bool isDrivable, string engineNoise, string honkNoise)
+    {
+        year = Year;
+        make = Make;    
+        model = Model;
+        isDrivable = IsDrivable;
+        engineNoise = EngineNoise;
+        honkNoise = HonkNoise;
+    }
+
    //Properties 
     public int Year { get; set; }
     public string Make { get; set; }
@@ -55,7 +65,9 @@ public class Car
 
 // Set the properties utilizing the 3 different ways we learned about, one way for each car
 
+
 //*************BONUS X 2*************//
+
 
 //Create a CarLot class
 //It should have at least one property: a List of cars

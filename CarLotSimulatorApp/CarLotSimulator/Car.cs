@@ -5,32 +5,38 @@
 /// </summary>
 public class Car
 {
+
+
+    //Constructor
+    public Car()
+    {
+
+    }
+
+
+
+   //Properties 
     public int Year { get; set; }
     public string Make { get; set; }
     public string Model { get; set; }
-    public void EngineNoise(string noise)
+    public bool IsDrivable { get; set; }
+    public string EngineNoise { get; set; }
+    public string HonkNoise { get; set; }
+
+   //Methods
+    public void MakeEngineNoise(string EngineNoise )
     {
-        Console.WriteLine(noise);
+        Console.WriteLine(EngineNoise);
     }
 
-    public void HonkNoise(string noise)
+    public void MakeHonkNoise(string HonkNoise)
     {
-        Console.WriteLine(noise);
-    }
-
-
-    public bool IsDrivable (bool drivable)
-    {
-        return drivable;
+        Console.WriteLine(HonkNoise);
     }
 
 
 
-
-    public Car()
-	{
-		
-	}
+   
 }
 
 
